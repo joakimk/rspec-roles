@@ -1,5 +1,7 @@
 # This is a work in progress. Alpha-level code. May not support the things written below.
 
+![Build status](https://secure.travis-ci.org/joakimk/rspec-roles.png)
+
 # Rspec::Roles
 
 A library for testing duck-typed roles inspired by Practical Object-Oriented Design In Ruby.
