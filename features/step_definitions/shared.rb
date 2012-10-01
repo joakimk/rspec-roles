@@ -15,3 +15,7 @@ end
 Then /^the examples should pass$/ do
   @last_result.should include("0 failures")
 end
+
+Then /^the examples should fail$/ do
+  @last_result.should include("1 failure")
+end
