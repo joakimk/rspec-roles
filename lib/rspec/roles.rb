@@ -1,4 +1,5 @@
 require "rspec/roles/version"
+require "rspec/roles/implements_role"
 require "singleton"
 
 module RSpec

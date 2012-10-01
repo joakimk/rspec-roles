@@ -2,5 +2,5 @@
 require "bundler/gem_tasks"
 
 task :default do
-  system("cucumber") || exit(1)
+  system("rspec && cucumber") || exit(1)
 end

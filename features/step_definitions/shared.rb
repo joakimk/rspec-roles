@@ -9,9 +9,9 @@ Given /^a file named "(.*?)" with:$/ do |file_name, content|
 end
 
 When /^I run "(.*?)"$/ do |command|
-  puts `cd #{ROOT}/tmp && #{command}`
+  @last_result = `cd #{ROOT}/tmp && #{command}`
 end
 
 Then /^the examples should pass$/ do
-  pending
+  @last_result.should include("0 failures")
 end
