@@ -23,4 +23,14 @@ describe RSpec::Roles, "self.define" do
 
     RSpec::Roles.roles.keys.size.should == 0
   end
+
+  it "supports method definition by array" do
+    RSpec::Roles.define do
+      role :order_client, [ :order_successful, :order_failed ]
+    end
+
+    RSpec::Roles.roles.should == {
+      :order_client => { :order_successful => [], :order_failed => [] }
+    }
+  end
 end
