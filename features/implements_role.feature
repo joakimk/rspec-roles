@@ -15,12 +15,12 @@ Feature: Running tests based on a role on a class that implements it
       """
         require "spec_helper.rb"
 
-        class Metchanic
+        class Mechanic
           def prepare_trip(trip)
           end
         end
 
-        describe Metchanic do
+        describe Mechanic do
           implements_role :preparer
         end
       """
@@ -32,10 +32,10 @@ Feature: Running tests based on a role on a class that implements it
       """
         require "spec_helper.rb"
 
-        class Metchanic
+        class Mechanic
         end
 
-        describe Metchanic do
+        describe Mechanic do
           implements_role :preparer
         end
       """
@@ -47,12 +47,12 @@ Feature: Running tests based on a role on a class that implements it
       """
         require "spec_helper.rb"
 
-        class Metchanic
+        class Mechanic
           def prepare_trip(trip, foo)
           end
         end
 
-        describe Metchanic do
+        describe Mechanic do
           implements_role :preparer
         end
       """
@@ -64,12 +64,12 @@ Feature: Running tests based on a role on a class that implements it
       """
         require "spec_helper.rb"
 
-        class Metchanic
+        class Mechanic
           def prepare_trip
           end
         end
 
-        describe Metchanic do
+        describe Mechanic do
           implements_role :preparer
         end
       """
@@ -89,12 +89,12 @@ Feature: Running tests based on a role on a class that implements it
       """
         require "spec_helper.rb"
 
-        class Metchanic
+        class Mechanic
           def prepare_trip
           end
         end
 
-        describe Metchanic do
+        describe Mechanic do
           implements_role :preparer
         end
       """
