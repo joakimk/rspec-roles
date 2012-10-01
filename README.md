@@ -68,6 +68,12 @@ And everywhere that implements the preparer role you do:
     #  end
     #end
 
+If you use spork and want it to reload the role definitions on each run, place the definitions in a file like "spec/support/rspec_roles.rb" and do this:
+
+    Spork.each_run do
+      load "#{Rails.root}/spec/support/rspec_roles.rb"
+    end
+
 ## Contributing
 
 1. Fork it
