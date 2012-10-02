@@ -5,8 +5,7 @@ require "rspec/roles/role_set"
 module RSpec
   module Roles
     def self.define(&block)
-      role_set.reset!
-      role_set.instance_eval(&block)
+      role_set.apply(&block)
     end
 
     def self.roles
