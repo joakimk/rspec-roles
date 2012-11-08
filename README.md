@@ -1,4 +1,4 @@
-## This is a work in progress. Beta-level code. I do use it myself in some projects.
+*This is a work in progress. Beta-level code. I do use it myself in some projects.*
 
 ![Build status](https://secure.travis-ci.org/joakimk/rspec-roles.png)
 
