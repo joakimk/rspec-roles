@@ -1,4 +1,4 @@
-# This is a work in progress. Alpha-level code. May not support the things written below.
+## This is a work in progress. Beta-level code. I do use it myself in some projects.
 
 ![Build status](https://secure.travis-ci.org/joakimk/rspec-roles.png)
 
@@ -34,17 +34,7 @@ Or install it yourself as:
 
 ## Usage
 
-In the spec file, instead of using *mock* or *double* you do:
-
-    preparer = role_double(:preparer)
-
-    # You can do this
-    preparer.should_receive(:prepare_trip).with(5)
-
-    # But this throws an error (to ensure you don't change the signature without updating the role)
-    preparer.should_receive(:prepare_marathon).with(5)
-
-Then in **spec/spec_helper.rb**:
+In **spec/spec_helper.rb**:
 
     Rspec::Roles.define do
       role :preparer, { :prepare_trip => [ :trip ] }
